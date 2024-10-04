@@ -2,10 +2,16 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Skull from '../components/Skull.vue'
 import AppAccounts from '../components/AppAccounts.vue'
+import WelcomePage from '../components/WelcomePage.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/',
+    name: 'WelcomePage',
+    component: WelcomePage,
+  },
   {
     path: '/skull',
     name: 'Skull',
